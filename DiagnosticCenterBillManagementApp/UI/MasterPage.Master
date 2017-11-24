@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="DiagnosticCenterBillManagementApp.UI.MasterPage" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../Content/MasterPagedesign.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body style="background-color: wheat">
+    
+        <div id="container" style="background-color: sandybrown" align="center" class="navbar navbar-fixed-top">
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="Default.aspx" style="color: white" ><b>Home</b></a></button>
+                
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><b>SetUp</b></button>
+                <div class="dropdown-content">
+                    <a href="TestTypeUI.aspx">TestType</a>
+                    <a href="TestUI.aspx">Test</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><b>TestRequest</b></button>
+                <div class="dropdown-content">
+                    <a href="TestRequestEntryUI.aspx">TestRequestEntry</a>
+                    <a href="PaymentUI.aspx">Payment</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn"><b>Report</b></button>
+                <div class="dropdown-content">
+                    <a href="TestWiseReportUI.aspx">TestWiseReport</a>
+                    <a href="TypeWiseUI.aspx">TypeWiseReport</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><b>Billing Status</b></button>
+                <div class="dropdown-content">
+                    <a href="UnpaidBillReportUI.aspx">UnpaidBillReport</a>
+                </div>
+            </div>
+
+        </div>
+        <div  >
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                             </asp:ContentPlaceHolder>
+        </div>
+
+    <footer class="navbar-fixed-bottom">
+        <p style="color: white; background-color: black; font-weight: bold;height: 50px; text-align: center"> &copy; CopyrightLaw 2017. Developed By MD. Tofayel Ahmed, MD. Mahfuzur Rahman, MD. Arif Hossain, MD. Rakib Hasan, </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="DiagnosticManagement" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Tofayel\ Ahmed\\Desktop\\Deploy\\DiagnosticCenterBillManagementApp\\DiagnosticCenterBillManagementApp\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Tofayel\ Ahmed\\Desktop\\Deploy\\DiagnosticCenterBillManagementApp\\DiagnosticCenterBillManagementApp\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="CourseConnectionString-Web.config Connection String" description="" value="Data Source=tcp:diagnosticserver.database.windows.net,1433;Initial Catalog=DiagnosticApp;User ID=Tofayel;Password=a1b2c3d4_" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Tofayel\ Ahmed\\Desktop\\Deploy\\DiagnosticCenterBillManagementApp\\DiagnosticCenterBillManagementApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CourseConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

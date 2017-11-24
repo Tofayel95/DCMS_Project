@@ -1,0 +1,15 @@
+﻿#img {
+    position:absolute;
+    left: 350px;
+    top:100px;
+    
+}
+
+#txt {
+    position: relative;
+    top: 450px;
+}
+.mySlides {
+    
+    display: block;
+}
